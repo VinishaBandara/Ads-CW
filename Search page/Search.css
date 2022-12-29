@@ -211,6 +211,7 @@ display: flex;
 
 .featured .box-container .box .Feature-content .location{
     padding:1rem 0;
+    margin-top: 0%;
 }
 
 .featured .box-container .box .Feature-content .location h3{
