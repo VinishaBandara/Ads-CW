@@ -19,6 +19,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
+    <header class="header" id="header">
+        <!-- navigation bar -->
+        <nav class="nav container" id="nav-container">
+          <div class="logo">
+            <img src="#" />
+          </div>
+          <div class="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-home-alt-2"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-building-house"></i>
+                  <span>Residences</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-award"></i>
+                  <span>Value</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bx bx-phone"></i>
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="button nav-button">About Us</a>
+        </nav>
+      </header>
     <section class="home-search" id="home">
         <div class="content">
             <div class="cont-bx">
@@ -34,80 +71,76 @@
                                         <div class="row">
                                             <div class="col-6 col-lg-3 col-md-3">
                                                 <div class="form-group">
-                                                    <select data-filter="PropertyStatus" class="wide select_option filter" id="filter-PropertyStatus">
-                                                        <option>Property Status</option>
-                                                        <option>For Sale</option>
-                                                        <option>For Rent</option>
+                                                    <select data-filter="PropertyStatus" class="wide select_option filter" id="Property-Status">
+                                                        <option data-display="Property Status">Property Status</option>
+                                                        <option value="For Sale">For Sale</option>
+                                                        <option value="For Rent">For Rent</option>
                         
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-3 col-md-3">
                                                 <div class="form-group">
-                                                    <select data-filter="PropertyType" class="wide select_option filter" id="filter-PropertyType">
+                                                    <select data-filter="PropertyType" class="wide select_option filter" id="Property-Type1">
                                                         <option data-display="Property Type">Property Type</option>
-                                                        <option>Apartments</option>
-                                                        <option>Houses</option>
+                                                        <option value="Apartments">Apartments</option>
+                                                        <option value="Houses">Houses</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-3 col-md-3">
                                                 <div class="form-group">
-                                                    <select data-filter="Locations" class="wide select_option filter" id="filter-Locations">
+                                                    <select data-filter="Locations" class="wide select_option filter" id="Locations">
                                                         <option data-display="Locations">Locations</option>
-                                                        <option>Colombo 5</option>
-                                                        <option>Colombo 7</option>
-                                                        <option>Battaramulla</option>
+                                                        <option value="Colombo 5">Colombo 5</option>
+                                                        <option value="Colombo 7">Colombo 7</option>
+                                                        <option value="Battaramulla">Battaramulla</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-3 col-md-3">
                                                 <div class="form-group">
-                                                    <select data-filter="BedRooms" class="wide select_option filter" id="filter-BedRooms">
+                                                    <select data-filter="BedRooms" class="wide select_option filter" id="Bedrooms">
                                                         <option data-display="Bedrooms">Bedrooms</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                        <option>7</option>
-                                                        <option>8</option>
-                                                        <option>9</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-6 col-lg-3 col-md-3">
                                                 <div class="form-group">
-                                                    <select data-filter="Bathrooms" class="wide select_option filter" id="filter-Bathrooms">
+                                                    <select data-filter="Bathrooms" class="wide select_option filter" id="Bathrooms">
                                                         <option data-display="Bathrooms">Bathrooms</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-6 col-lg-3 col-md-3">
+                                            <!-- <div class="col-6 col-lg-3 col-md-3">
                                                 <div class="form-group">
-                                                    <select data-filter="Price" class="wide select_option filter" id="filter-Price">
+                                                    <select data-filter="Price" class="wide select_option filter" id="Price">
                                                         <option data-display="Price">Price</option>
-                                                        <option>$10000</option>
-                                                        <option>$15000</option>
-                                                        <option>$20000</option>
-                                                        <option>$25000</option>
+                                                        <option value="$10000">$10000</option>
+                                                        <option value="$15000">$15000</option>
+                                                        <option value="$20000">$20000</option>
+                                                        <option value="$25000">$25000</option>
                                                     </select>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
-                        
                                     </div>
                                 </div>
                             </div>  
                         </div>
+          
                         <div class="col-12 col-lg-3 col-md-3">
                             <div class="form-group">
-                                <button class="btn btn-primary text-uppercase btn-block"> search <i
+                                <button class="btn btn-primary text-uppercase btn-block" id="filter"> search <i
                                         class="fa fa-search ml-1"></i></button>
                             </div>
                         </div>
@@ -123,23 +156,21 @@
 
 <!-- featured section starts  -->
 
-<section class="featured" id="featured">
+<section class="featured" id="Placeholder">
     <div class="box-container">
-        <div class="box" data-propertyStatus="Rent" data-propertyType="Apartment" data-location="Colombo 5" data-bedRooms="3" data-bathrooms="2" data-price="25000">
+
+        <!-- property 1 -->
+        <div class="box">
             <div class="image-container">
-                <img src="/Images/Apartment (1).jpg" alt="">
+                <img src="/Images/Apartment(1).jpg" alt="">
                 <div class="info">
                     <h3>3 days ago</h3>
                     <h3>for rent</h3>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
-                </div>
             </div>
             <div class="Feature-content">
                 <div class="price">
-                    <h3>$25,000/mo</h3>
+                    <h3>$25,000</h3>
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-envelope"></a>
                     <a href="#" class="fas fa-phone"></a>
@@ -159,22 +190,18 @@
                 </div>
             </div>
         </div>
-
-        <div class="box" data-propertyStatus="Sell" data-propertyType="House" data-location="Colombo 5" data-bedRooms="2" data-bathrooms="2" data-price="15000">
+    <!-- property 2 -->
+        <div class="box">
             <div class="image-container">
-                <img src="/Images/Apartment (4).jpg" alt="">
+                <img src="/Images/Apartment(4).jpg" alt="">
                 <div class="info">
                     <h3>6 days ago</h3>
                     <h3>for sell</h3>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>2</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>7</h3></a>
-                </div>
             </div>
             <div class="Feature-content">
                 <div class="price">
-                    <h3>$25,000/mo</h3>
+                    <h3>$55,000/mo</h3>
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-envelope"></a>
                     <a href="#" class="fas fa-phone"></a>
@@ -194,22 +221,18 @@
                 </div>
             </div>
         </div>
-
+   <!-- property 3 -->
         <div class="box">
             <div class="image-container">
-                <img src="/Images/Apartment (3).jpg" alt="">
+                <img src="/Images/Apartment(3).jpg" alt="">
                 <div class="info">
                     <h3>1 days ago</h3>
                     <h3>for rent</h3>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
-                </div>
             </div>
             <div class="Feature-content">
                 <div class="price">
-                    <h3>$25,000/mo</h3>
+                    <h3>$65,000/mo</h3>
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-envelope"></a>
                     <a href="#" class="fas fa-phone"></a>
@@ -229,22 +252,18 @@
                 </div>
             </div>
         </div>
-
+<!-- property 4 -->
         <div class="box">
             <div class="image-container">
-                <img src="/Images/Apartment (5).jpg" alt="">
+                <img src="/Images/Apartment(5).jpg" alt="">
                 <div class="info">
                     <h3>9 days ago</h3>
                     <h3>for rent</h3>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>2</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
-                </div>
             </div>
             <div class="Feature-content">
                 <div class="price">
-                    <h3>$25,000/mo</h3>
+                    <h3>$75,000/mo</h3>
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-envelope"></a>
                     <a href="#" class="fas fa-phone"></a>
@@ -264,22 +283,18 @@
                 </div>
             </div>
         </div>
-
+<!-- property 5-->
         <div class="box">
             <div class="image-container">
-                <img src="/Images/Apartment (2).jpg" alt="">
+                <img src="/Images/Apartment(2).jpg" alt="">
                 <div class="info">
                     <h3>10 days ago</h3>
                     <h3>for sell</h3>
                 </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>3</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
-                </div>
             </div>
             <div class="Feature-content">
                 <div class="price">
-                    <h3>$25,000/mo</h3>
+                    <h3>$85,000/mo</h3>
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-envelope"></a>
                     <a href="#" class="fas fa-phone"></a>
@@ -299,178 +314,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="box">
-            <div class="image-container">
-                <img src="images/img-6.jpg" alt="">
-                <div class="info">
-                    <h3>3 days ago</h3>
-                    <h3>for sell</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
-                </div>
-            </div>
-            <div class="Feature-content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-6.jpg" alt="">
-                <div class="info">
-                    <h3>3 days ago</h3>
-                    <h3>for sell</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
-                </div>
-            </div>
-            <div class="Feature-content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-6.jpg" alt="">
-                <div class="info">
-                    <h3>3 days ago</h3>
-                    <h3>for sell</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
-                </div>
-            </div>
-            <div class="Feature-content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-6.jpg" alt="">
-                <div class="info">
-                    <h3>3 days ago</h3>
-                    <h3>for sell</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
-                </div>
-            </div>
-            <div class="Feature-content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image-container">
-                <img src="images/img-6.jpg" alt="">
-                <div class="info">
-                    <h3>3 days ago</h3>
-                    <h3>for sell</h3>
-                </div>
-                <div class="icons">
-                    <a href="#" class="fas fa-film"><h3>1</h3></a>
-                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
-                </div>
-            </div>
-            <div class="Feature-content">
-                <div class="price">
-                    <h3>$25,000/mo</h3>
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-envelope"></a>
-                    <a href="#" class="fas fa-phone"></a>
-                </div>
-                <div class="location">
-                    <h3>modern apartments</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
-                </div>
-                <div class="details">
-                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
-                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
-                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
-                </div>
-                <div class="buttons">
-                    
-                    <a href="#" class="btn">view details</a>
-                </div>
-            </div>
-        </div> -->
     </div>   
 </section>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

@@ -18,14 +18,77 @@ html{
 body{
     background:#f7f7f7;
 }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: .4s;
+    z-index: 2;
+}
+nav{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header{
+    background: #666;
+}
+.logo{
+    height: 120px;
+    width: 250px;
+    margin-left: 10px;
+}
+.nav-menu{
+    width: initial;
+    margin-left: auto;
+}
+.nav-list{
+    display: flex;
+    column-gap: 30px;
+    font-size: 17px;
+    
+}
+.nav-link{
+    color:hsl(228, 12%, 75%);
+}
+.nav a{
+    margin-left: 40px;
+}
+.button{
+    display: inline-block;
+    background: gray;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px hsla(228, 66%, 45%, .25);
+    transition: .3s;
+    cursor: pointer;
+
+}
 
 
 .home-search{
     padding: 1rem 11%;
+    
 
 }
 .content{
-margin-top: 5rem;
+margin-top: 15rem;
 background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),url(/Images/bailey-anselme-Bkp3gLygyeA-unsplash.jpg);
 background-repeat: no-repeat;
 background-size: cover;
